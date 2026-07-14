@@ -1,7 +1,9 @@
 /* ============================================
    ALETHINOS MUSIC — Website Styles
+   Cinematic, dark, professional
    ============================================ */
 
+/* CSS Variables */
 :root {
     --color-bg: #0a0a0b;
     --color-bg-secondary: #111113;
@@ -26,6 +28,7 @@
     --transition: 0.3s ease;
 }
 
+/* Reset & Base */
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
@@ -43,6 +46,12 @@ body {
     color: var(--color-text);
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    display: block;
 }
 
 a {
@@ -55,12 +64,14 @@ a:hover {
     color: var(--color-accent-hover);
 }
 
+/* Container */
 .container {
     max-width: var(--max-width);
     margin: 0 auto;
     padding: 0 var(--spacing-md);
 }
 
+/* Screen Reader Only */
 .sr-only {
     position: absolute;
     width: 1px;
@@ -73,7 +84,10 @@ a:hover {
     border-width: 0;
 }
 
-/* Navigation */
+/* ============================================
+   NAVIGATION
+   ============================================ */
+
 .nav {
     position: fixed;
     top: 0;
@@ -83,6 +97,7 @@ a:hover {
     background: rgba(10, 10, 11, 0.9);
     backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--color-border);
+    transition: background var(--transition);
 }
 
 .nav-container {
@@ -122,6 +137,7 @@ a:hover {
     color: var(--color-text);
 }
 
+/* Mobile Nav Toggle */
 .nav-toggle {
     display: none;
     flex-direction: column;
@@ -140,7 +156,10 @@ a:hover {
     transition: var(--transition);
 }
 
-/* Hero */
+/* ============================================
+   HERO SECTION
+   ============================================ */
+
 .hero {
     min-height: 100vh;
     display: flex;
@@ -212,7 +231,10 @@ a:hover {
     50% { transform: translateX(-50%) translateY(-10px); }
 }
 
-/* Buttons */
+/* ============================================
+   BUTTONS
+   ============================================ */
+
 .btn {
     display: inline-flex;
     align-items: center;
@@ -269,7 +291,10 @@ a:hover {
     width: 100%;
 }
 
-/* Sections */
+/* ============================================
+   SECTIONS
+   ============================================ */
+
 section {
     padding: var(--spacing-xl) 0;
 }
@@ -293,7 +318,10 @@ section {
     margin: 0 auto var(--spacing-lg);
 }
 
-/* About */
+/* ============================================
+   ABOUT SECTION
+   ============================================ */
+
 .about {
     background: var(--color-bg-secondary);
 }
@@ -335,6 +363,11 @@ section {
     color: var(--color-accent);
 }
 
+.about-image {
+    display: flex;
+    justify-content: center;
+}
+
 .image-placeholder {
     width: 100%;
     max-width: 400px;
@@ -350,7 +383,23 @@ section {
     gap: var(--spacing-xs);
 }
 
-/* Music */
+.image-placeholder span {
+    font-size: 1rem;
+}
+
+.image-placeholder small {
+    font-size: 0.75rem;
+    opacity: 0.6;
+}
+
+/* ============================================
+   MUSIC SECTION
+   ============================================ */
+
+.music {
+    background: var(--color-bg);
+}
+
 .music-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -372,6 +421,10 @@ section {
 
 .music-card.featured {
     grid-column: 1 / -1;
+}
+
+.music-card.featured .music-card-content {
+    max-width: 600px;
 }
 
 .music-label {
@@ -400,10 +453,32 @@ section {
     margin-bottom: var(--spacing-sm);
 }
 
+.music-links {
+    margin-top: var(--spacing-sm);
+}
+
+.music-link {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-accent);
+}
+
 .embed-container {
     margin-top: var(--spacing-md);
     border-radius: var(--radius);
     overflow: hidden;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
 }
 
 .music-note {
@@ -412,7 +487,14 @@ section {
     color: var(--color-text-muted);
 }
 
-/* Licensing */
+.music-note a {
+    color: var(--color-accent);
+}
+
+/* ============================================
+   LICENSING SECTION
+   ============================================ */
+
 .licensing {
     background: var(--color-bg-secondary);
 }
@@ -450,6 +532,13 @@ section {
     font-size: 0.9375rem;
 }
 
+.library-links {
+    display: flex;
+    gap: var(--spacing-sm);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .library-link {
     display: inline-block;
     padding: 0.5rem 1rem;
@@ -464,9 +553,17 @@ section {
 .library-link:hover {
     border-color: var(--color-accent);
     color: var(--color-accent);
+    background: var(--color-bg);
 }
 
-/* Contact */
+/* ============================================
+   CONTACT SECTION
+   ============================================ */
+
+.contact {
+    background: var(--color-bg);
+}
+
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -481,10 +578,19 @@ section {
     line-height: 1.7;
 }
 
+.contact-details {
+    margin-bottom: var(--spacing-md);
+}
+
 .contact-email {
     font-size: 1.125rem;
     color: var(--color-accent);
     font-weight: 500;
+    word-break: break-word;
+}
+
+.contact-email:hover {
+    color: var(--color-accent-hover);
 }
 
 .social-links {
@@ -507,8 +613,10 @@ section {
 .social-link:hover {
     border-color: var(--color-accent);
     color: var(--color-accent);
+    background: var(--color-card);
 }
 
+/* Contact Form */
 .contact-form {
     background: var(--color-card);
     border: 1px solid var(--color-border);
@@ -563,7 +671,10 @@ section {
     opacity: 0.6;
 }
 
-/* Footer */
+/* ============================================
+   FOOTER
+   ============================================ */
+
 .footer {
     background: var(--color-bg-secondary);
     border-top: 1px solid var(--color-border);
@@ -582,7 +693,10 @@ section {
     opacity: 0.6;
 }
 
-/* Responsive */
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -628,6 +742,7 @@ section {
     }
 }
 
+/* Scroll animations */
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
