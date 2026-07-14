@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alethinos Music | Sync Licensing & Composition</title>
+    <meta name="description" content="Cinematic music for film, TV, trailers, and games. Heavy, emotional, ambient compositions.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">Alethinos</a>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#music">Music</a></li>
+                <li><a href="#licensing">Licensing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <p class="hero-tagline">Sync Licensing · Composition · Production</p>
+            <h1 class="hero-title">Alethinos Music</h1>
+            <p class="hero-description">
+                Cinematic compositions for film, television, trailers, and games. 
+                Where orchestral weight meets the raw edge of alternative and metal.
+            </p>
+            <div class="hero-cta">
+                <a href="#music" class="btn btn-primary">Listen to Reel</a>
+                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll</span>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2 class="section-title">About</h2>
+                    <p>
+                        Alethinos Music is a sync licensing composition house based in Whittier, California. 
+                        We create emotionally charged, cinematic music for trailers, film scores, and game soundtracks.
+                    </p>
+                    <p>
+                        Our sound sits at the intersection of orchestral grandeur and alternative intensity—
+                        lush ambient textures, driving rhythmic elements, and a willingness to embrace darkness 
+                        when the story calls for it.
+                    </p>
+                    <div class="about-tags">
+                        <span class="tag">Cinematic</span>
+                        <span class="tag">Trailer</span>
+                        <span class="tag">Ambient</span>
+                        <span class="tag">Orchestral Hybrid</span>
+                        <span class="tag">Alternative Metal</span>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <span>Your Photo or Artwork</span>
+                        <small>Replace this with a 600x800 image</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Music Section -->
+    <section id="music" class="music">
+        <div class="container">
+            <h2 class="section-title center">Selected Work</h2>
+            <p class="section-subtitle center">Demo reel and catalog highlights</p>
+            
+            <div class="music-grid">
+                <div class="music-card featured">
+                    <div class="music-card-content">
+                        <span class="music-label">Demo Reel</span>
+                        <h3>Sync Licensing Reel 2026</h3>
+                        <p>A curated selection of cues spanning trailer, dramatic, and ambient styles.</p>
+                        <div class="embed-container">
+                            <iframe width="100%" height="166" scrolling="no" frameborder="no" 
+                                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/placeholder&color=%23a0a0a0&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="music-card">
+                    <div class="music-card-content">
+                        <span class="music-label">Trailer</span>
+                        <h3>Elysium</h3>
+                        <p>Orchestral hybrid with driving percussion and ambient textures.</p>
+                        <div class="music-links">
+                            <a href="#" class="music-link">Listen →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="music-card">
+                    <div class="music-card-content">
+                        <span class="music-label">Ambient</span>
+                        <h3>Weeping Wall</h3>
+                        <p>Atmospheric drone piece with processed guitar and string murmurations.</p>
+                        <div class="music-links">
+                            <a href="#" class="music-link">Listen →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="music-card">
+                    <div class="music-card-content">
+                        <span class="music-label">Dramatic</span>
+                        <h3>Ridgewalk</h3>
+                        <p>Tense, rhythmic underscore with modular sequences and low-end weight.</p>
+                        <div class="music-links">
+                            <a href="#" class="music-link">Listen →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="music-note">
+                <p>
+                    Full catalog available upon request. 
+                    <a href="#contact">Contact for licensing inquiries.</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Licensing Section -->
+    <section id="licensing" class="licensing">
+        <div class="container">
+            <h2 class="section-title center">Licensing</h2>
+            <p class="section-subtitle center">How to use Alethinos Music in your project</p>
+            
+            <div class="licensing-grid">
+                <div class="licensing-card">
+                    <h3>Direct Licensing</h3>
+                    <p>For custom scores, exclusive placements, or direct sync licensing.</p>
+                    <a href="#contact" class="btn btn-outline">Request a Quote</a>
+                </div>
+                
+                <div class="licensing-card">
+                    <h3>Music Libraries</h3>
+                    <p>Our catalog is available through select music libraries and publishers.</p>
+                    <div class="library-links">
+                        <a href="#" class="library-link">Library 1</a>
+                        <a href="#" class="library-link">Library 2</a>
+                    </div>
+                </div>
+                
+                <div class="licensing-card">
+                    <h3>Custom Composition</h3>
+                    <p>Need something specific? We compose to picture, brief, or emotion.</p>
+                    <a href="#contact" class="btn btn-outline">Discuss Your Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2 class="section-title">Contact</h2>
+                    <p>
+                        For licensing inquiries, custom composition requests, or just to say hello—
+                        reach out directly or subscribe to receive new music and placement announcements.
+                    </p>
+                    
+                    <div class="contact-details">
+                        <a href="mailto:licensing@alethinomusic.com" class="contact-email">
+                            licensing@alethinomusic.com
+                        </a>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="SoundCloud">SoundCloud</a>
+                        <a href="#" class="social-link" aria-label="Spotify">Spotify</a>
+                        <a href="#" class="social-link" aria-label="Instagram">Instagram</a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">LinkedIn</a>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Get Updates</h3>
+                    <p>New music, placements, and behind-the-scenes.</p>
+                    
+                    <form name="email-capture" method="POST" action="/success" data-netlify="true">
+                        <div class="form-group">
+                            <label for="email" class="sr-only">Email address</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="name" class="sr-only">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name (optional)" class="form-input">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Subscribe</button>
+                        <p class="form-note">No spam. Unsubscribe anytime.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Alethinos Music, LLC. All rights reserved.</p>
+            <p class="footer-credits">Cinematic music for picture.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
